@@ -48,7 +48,7 @@ source("R/plot_4_sites_results.R")
 
 
 
-#---Read in SL data from Andy's data----
+#---Read in SL data from  proxy records---
 SL_data <- readr::read_csv("https://www.dropbox.com/s/43kbaoxqmnrprmv/Common%20Era%20Database%202022_a.csv?dl=1")
 new_col_names <- c('Basin', 'Region','Site','Reference','Indicator','Latitude','Longitude',
                    'RSL','RSL_er_max','RSL_er_min','Age','Age_2_er_max','Age_2_er_min')
@@ -58,7 +58,7 @@ names(SL_data) <- new_col_names
 SL_df <- clean_SL_data(SL_df=SL_data,SL_data=SL_data,
               save_loc="data/SL_df_clean.csv")
 
-#--Clean tidal gauge data---
+#--Clean tidal gauge data from PSMSL---
 SL_df <- clean_tidal_gauge_data(SL_df=SL_df,
                        #--Data from my github account--
                        path_to_data = "https://raw.githubusercontent.com/maeveupton/tide_gauge_data_PSMSL/main/annual_SL_tide_df.csv",
