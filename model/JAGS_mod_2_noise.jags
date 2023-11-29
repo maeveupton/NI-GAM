@@ -16,6 +16,9 @@ model {
     
     # Linear Local component + Site specific vertical offset 
     g_h_z_x[i] <- h_z_x[i] + g_z_x[i]
+        
+    # Pulling out residuals of model
+    residuals_mod2[i] <- y[i] - mu[i]
   }
 
   # Informed Regional component
