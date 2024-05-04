@@ -1,0 +1,78 @@
+Database of Common Era RSL Reconstructions
+Log of updates
+
+## 13 February 2019
+Version 2019_a corresponds to dataset used in Kemp et al (2018), Newfoundland
+This is the starting version to be updated
+
+## 13 February 2019
+Addition of new reconstruction from Quebec (Barnett et al 2019 in QSR)
+Data are the original reconstruction from the paper
+See study folder for Kemp reworking of record from original data
+New Version: 2019_b
+
+## 29 March 2019
+Data from Israel (Sivan et al., 2004) removed and replaced with standardized data from Dean et al. (2019 in QSR)
+Addition of new reconstruction from Croatia (Shaw et al 2018 QSR). Data are the original reconstruction from the paper, provided by Tim Shaw via email request
+New Version: 2019_c
+
+## 20 February 2020
+Replaced reconstruction from Chezzetcook (Nova Scotia; Gehrels et al 2005) with new version in Gehrels et al (2020 GRL), data from supporting info
+Addition of new reconstruction from Sanborn Cove (Maine; Gehrels et al 2020 GRL), data from supporting info
+Addition of new reconstruction from Barn Island (Connecticut; Gehrels et al 2020 GRL), data from supporting info 
+Addition of new reconstruction from Maldives (Kench et al 2019 Nature Geoscience), data from supporting info
+Addition of new reconstruction from French Polynesia (Hallmann et al 2018 Nature Communications), data from supporting info
+Amended "Region" column to standardize. For example 'Connecticut, USA" changed to "Connecticut" for ease of use as a factor.
+Added new column for "Basin" to facilitate analysis by ocean basin.
+New Version: 2020_a
+
+## 29 June 2020 - systematic trials with Erica Ashe
+Removed reconstruction from the Maldives (Kench et al 2019) on basis of microatolls likely being eroded (see emails with Aron Meltzner)
+Basin, Region and Site names changed to remove special characters that can cause problems when spatio-temporal model is used in Matlab
+New Version: 2020_b
+
+Addition of new reconstruction from Croatia (Faivre et al, 2019 QSR). Only used Lithophyllum thalli data. Needed to calculate new indicative meaning (see file notes).
+New Version: 2020_c
+
+Addition of new reconstructions from Snipe Key and Swan Key, Florida (data provided by Nicole Khan in email)
+New Version: 2020_d
+
+Removed sea-level index points. These were previosuly included to provide data to better constrain GIA on the US East Coast at sites with high resolution data, but where record may have been too short to estimate linear term.
+Removed cases are for single sites with too few data to reasonably infer a regional, non-linear signal and were not collected specially to look at Common Era
+Goal is to update model and apply code to automatically draw on databases of sea-level index points.
+New Version: 2020_e
+
+## 5 July 2020
+Experimental dataset. Added database of sea-level index points from Pohnpei and Kosrae (Micronesia). Each island treated as a single site with one lat/long.
+In later versions the experimental data from Micronesia was removed prior to changes listed.
+New Version: 2020_e_FSM
+
+## 18 August 2020
+Replaced Florida records from Snipe Key and Swan Key following small change to age depth model by Nicole Khan (dropped 210Pb and 137Cs data from Snipe since none was run for Swan)
+Corrected longitude of Bassin site to be negative
+New Version: 2020_f
+
+## 9 September 2020
+Underlying model was changed for this run by hard coding "historic" tide gauges that are not the main PSMSL database. Only the historic values are used and then the model
+pulls in nearby tide gauge data from PSMSL to avoid duplication of data and ensure all data is used. Sites added are Amsterdam, Stockholm, Kronstadt, Liverpool, and Boston from PSMSL long records section.
+Also added are Honolulu, Key West, and Sydney using data of Hogarth (2014) downloaded from PSMSL author archives page. See Kemp spreadhseets for details, all gauges put into units of mm to station datum.
+New Version (output files only): 2020_g
+
+## 16 April 2021
+Added new record from Cheesequake, NJ (Walker et al., 2021)
+Added new record from Swan Inlet, Falklands. Data are the diatom reconstruction from Thomas Newton's (2017) PhD thesis. Results are also presented in Newton et al. (2020), but not tabulated. And partially presented in Frederickse et al (2020)
+Replaced East River, CT record (Kemp et al. 2015) with revised version (Stearns et al.) Changes are new PME from BTF trained on expanded training set and IntCal20 for 14C calibration.
+Replaced Pelham Bay, NY record (Kemp et al. 2017) with revised version (Stearns et al.) Changes are new PME from BTF trained on expanded training set; IntCal20 for 14C calibration; Suess correctio nfor core and modern d13C; and addition of d15N age marker
+Added new record from Fox Hill Marsh, RI (Stearns et al.)
+New Version: 2021_a
+
+## 10 November 2021
+Added new records from Pohnpei (Nanitipw, Rohi) and Kosrae (Utwe) in Federated States of Micronesia
+Data are pseudo index points created by Sefton et al. (age of dated levels revised by Bchron age-depth models)
+New Version: 2021_b
+
+## 10 March 2022
+New Zealand updated to use results from Garrett et al. (2022; supp tables), record from Pounawea replaced and record from Mokomoko Inlet added
+No analog samples (MinDC>regional20%) removed.
+Longitude of reconstruction from Denmark updated (it was -8.267E, but should be 8.267E)
+New Version: 2022_a
